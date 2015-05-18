@@ -1,4 +1,4 @@
-# PyDeTide *In Progress*
+# PyDeTide 
 
 
 ### Description
@@ -10,10 +10,13 @@ The tool is based on the 'rlowess' and 'rloess' filtering methods of the MATLAB 
 
 
 ### Pre-requisites:
-numpy, matplotlib (for smoothData.py module) and wx (for the pyDeTide.py GUI)
+* numpy (to use the smoothData.py module)
+* wx and matplotlib (to run the pyDeTide.py GUIand visualize your data analysis)
 
 
 ### Installation and run
+
+#### Standalone tool
 Download the tool, open a terminal and run:
 ```
 $ unzip PyDeTide-xxx.zip
@@ -24,5 +27,16 @@ and the main frame window should appear.
 
 Then in the file menu, you can select open file and choose a time series to analyse.
 Time series have to be formatted as two-columns text files. 
+
+#### Callable module
+Alternativele, one can locally save the smoothData.py module in the PYTHON PATH and use it as any other Python module:
+```
+import smoothData as sd
+...
+s = sd.smooth(x, y, span, method)
+
+```
+where (x, y) are the time series, span is the number of points after and before each point of the curve used for smoothing the time series and method is one among rlowess and rloess
+ 
 
 
