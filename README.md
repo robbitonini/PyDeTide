@@ -36,7 +36,7 @@ import smoothData as sd
 s = sd.smooth(x, y, span, method)
 
 ```
-where (x, y) are the time series, span is the number of points after and before each point of the curve used for smoothing the time series and method is one among rlowess and rloess
+where (x, y) is the time series, **span** is the number of points after and before each point of the curve used for the smoothing and **method** is one among rlowess and rloess
  
 
 
