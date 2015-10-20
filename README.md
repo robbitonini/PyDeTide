@@ -16,7 +16,7 @@ The tool is based on the 'rlowess' and 'rloess' filtering methods of the MATLAB 
 
 ### Installation and run
 
-#### Standalone tool
+#### As standalone tool
 Download the tool, open a terminal and run:
 ```
 $ unzip PyDeTide-xxx.zip
@@ -28,7 +28,7 @@ and the main frame window should appear.
 Then in the file menu, you can select open file and choose a time series to analyse.
 Time series have to be formatted as two-columns text files. 
 
-#### Callable module
+#### As module
 Alternativele, one can locally save the smoothData.py module in the PYTHON PATH and use it as any other Python module:
 ```
 import smoothData as sd
